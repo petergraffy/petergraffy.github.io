@@ -63,7 +63,7 @@ section {
 #projects {
     background-color: white;
     padding: 4rem;
-    text-align: center;
+    text-align: left;
 }
 
 .gallery {
@@ -118,7 +118,7 @@ footer {
 #publications {
     background-color: #f4f4f4;
     padding: 4rem;
-    text-align: center;
+    text-align: left;
 }
 
 .publication {
