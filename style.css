@@ -46,7 +46,7 @@ section {
 }
 
 .headshot {
-    width: 500px; /* Set width */
+    width: 250px; /* Set width */
     height: auto; /* Maintain aspect ratio */
     border-radius: 50%; /* Round image */
     margin-bottom: 1rem;
