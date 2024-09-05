@@ -45,6 +45,13 @@ section {
     padding: 10rem 0;
 }
 
+.headshot {
+    width: 150px; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 50%; /* Makes the image round */
+    margin-bottom: 1rem;
+}
+
 #home h1 {
     font-size: 3rem;
     color: #111;
@@ -95,4 +102,5 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+
 
