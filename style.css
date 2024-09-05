@@ -46,8 +46,8 @@ section {
 }
 
 .headshot {
-    max-width: 150px; /* Strict maximum width */
-    width: 150px; /* Set width */
+    max-width: 500px; /* Strict maximum width */
+    width: 500px; /* Set width */
     height: auto; /* Maintain aspect ratio */
     border-radius: 50%; /* Round image */
     margin-bottom: 1rem;
