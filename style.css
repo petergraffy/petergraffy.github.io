@@ -66,6 +66,14 @@ section {
     text-align: left; /* Left-align text inside */
 }
 
+#about {
+    padding-bottom: 1rem; /* Adjust this value to reduce space */
+}
+
+#projects {
+    padding-top: 2rem; /* Adjust this value to reduce space */
+}
+
 .project {
     margin-bottom: 2rem;
     padding: 2rem;
