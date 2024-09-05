@@ -46,13 +46,13 @@ section {
 }
 
 .headshot {
-    width: 250px; /* Set width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Round image */
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
     margin-bottom: 1rem;
     display: block;
-    margin-left: auto; /* Centering the image */
-    margin-right: auto; /* Centering the image */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #home h1 {
@@ -60,16 +60,10 @@ section {
     color: #111;
 }
 
-#projects {
-    background-color: white;
-    padding: 4rem;
-    text-align: left;
-}
-
-.gallery {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+.container {
+    max-width: 800px; /* Control the maximum width */
+    margin: 0 auto; /* Center the content horizontally */
+    text-align: left; /* Left-align text inside */
 }
 
 .project {
@@ -115,25 +109,6 @@ footer {
     padding: 1rem 0;
 }
 
-#publications {
-    background-color: #f4f4f4;
-    padding: 4rem;
-    text-align: left;
-}
-
-.publication {
-    margin-bottom: 1.5rem;
-}
-
-.publication h3 {
-    font-size: 1.5rem;
-}
-
-.publication p {
-    font-size: 1rem;
-    color: #555;
-}
-
 #publication-list {
     margin-top: 2rem;
 }
@@ -142,9 +117,6 @@ footer {
     margin-bottom: 1.5rem;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
-
-
