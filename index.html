@@ -43,32 +43,23 @@
     <footer>
         <p>&copy; Peter Graffy 2024</p>
     </footer>
-</body>
-</html>
 
-
-
-
-    <!-- Add this script at the bottom of your index.html -->
+    <!-- JavaScript to Fetch and Display NIH Publications -->
     <script>
-        // Fetch the publication list from the NCBI API
         const fetchPublications = async () => {
             try {
-                // Step 1: Fetch publication IDs (PubMed IDs) using E-utilities API
                 const esearchUrl = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Peter+Graffy[Author]&retmode=json';
                 const esearchResponse = await fetch(esearchUrl);
                 const esearchData = await esearchResponse.json();
                 const pubmedIDs = esearchData.esearchresult.idlist;
 
-                // Step 2: Fetch publication details for the retrieved PubMed IDs
                 const ids = pubmedIDs.join(',');
                 const esummaryUrl = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=${ids}&retmode=json`;
                 const esummaryResponse = await fetch(esummaryUrl);
                 const esummaryData = await esummaryResponse.json();
 
-                // Step 3: Display publication titles and links
                 const publicationsDiv = document.getElementById('publications');
-                publicationsDiv.innerHTML = ''; // Clear the "Loading..." text
+                publicationsDiv.innerHTML = '';
 
                 pubmedIDs.forEach(id => {
                     const pub = esummaryData.result[id];
@@ -85,7 +76,6 @@
             }
         };
 
-        // Call the function to fetch and display publications
         fetchPublications();
     </script>
 </body>
