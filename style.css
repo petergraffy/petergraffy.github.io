@@ -111,10 +111,10 @@ section {
     width: 100%;
 }
 
-footer {
+#publications {
     background-color: #f4f4f4;
-    text-align: center;
-    padding: 1rem 0;
+    padding: 4rem;
+    /* Remove text-align: left */
 }
 
 #publication-list {
@@ -123,6 +123,12 @@ footer {
 
 #publication-list .publication {
     margin-bottom: 1.5rem;
+}
+
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 1rem 0;
 }
 
 html {
