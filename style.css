@@ -46,11 +46,12 @@ section {
 }
 
 .headshot {
-    width: 50px; /* Smaller width */
+    max-width: 50px; /* Strict maximum width */
+    width: 50px; /* Set width */
     height: auto; /* Maintain aspect ratio */
     border-radius: 50%; /* Round image */
     margin-bottom: 1rem;
-    display: block; /* Ensure it respects the size */
+    display: block;
     margin-left: auto; /* Centering the image */
     margin-right: auto; /* Centering the image */
 }
