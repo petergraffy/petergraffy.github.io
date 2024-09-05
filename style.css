@@ -46,10 +46,13 @@ section {
 }
 
 .headshot {
-    width: 10px; /* Adjust the width as needed */
-    height: auto;
-    border-radius: 50%; /* Makes the image round */
+    width: 50px; /* Smaller width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Round image */
     margin-bottom: 1rem;
+    display: block; /* Ensure it respects the size */
+    margin-left: auto; /* Centering the image */
+    margin-right: auto; /* Centering the image */
 }
 
 #home h1 {
