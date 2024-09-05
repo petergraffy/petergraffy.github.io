@@ -75,6 +75,23 @@ footer {
     padding: 1rem 0;
 }
 
+#publications {
+    margin-top: 2rem;
+}
+
+.publication {
+    margin-bottom: 1.5rem;
+}
+
+.publication h3 {
+    font-size: 1.5rem;
+}
+
+.publication p {
+    font-size: 1rem;
+    color: #555;
+}
+
 html {
     scroll-behavior: smooth;
 }
