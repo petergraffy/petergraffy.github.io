@@ -46,3 +46,47 @@
 </body>
 </html>
 
+
+
+
+    <!-- Add this script at the bottom of your index.html -->
+    <script>
+        // Fetch the publication list from the NCBI API
+        const fetchPublications = async () => {
+            try {
+                // Step 1: Fetch publication IDs (PubMed IDs) using E-utilities API
+                const esearchUrl = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Peter+Graffy[Author]&retmode=json';
+                const esearchResponse = await fetch(esearchUrl);
+                const esearchData = await esearchResponse.json();
+                const pubmedIDs = esearchData.esearchresult.idlist;
+
+                // Step 2: Fetch publication details for the retrieved PubMed IDs
+                const ids = pubmedIDs.join(',');
+                const esummaryUrl = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=${ids}&retmode=json`;
+                const esummaryResponse = await fetch(esummaryUrl);
+                const esummaryData = await esummaryResponse.json();
+
+                // Step 3: Display publication titles and links
+                const publicationsDiv = document.getElementById('publications');
+                publicationsDiv.innerHTML = ''; // Clear the "Loading..." text
+
+                pubmedIDs.forEach(id => {
+                    const pub = esummaryData.result[id];
+                    const pubDiv = document.createElement('div');
+                    pubDiv.classList.add('publication');
+                    pubDiv.innerHTML = `
+                        <h3><a href="https://pubmed.ncbi.nlm.nih.gov/${id}/" target="_blank">${pub.title}</a></h3>
+                        <p>${pub.source}</p>
+                    `;
+                    publicationsDiv.appendChild(pubDiv);
+                });
+            } catch (error) {
+                console.error('Error fetching publications:', error);
+            }
+        };
+
+        // Call the function to fetch and display publications
+        fetchPublications();
+    </script>
+</body>
+</html>
