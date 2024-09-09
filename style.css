@@ -133,6 +133,12 @@ section {
     margin-bottom: 1.5rem;
 }
 
+#contact {
+    padding-top: 2rem;
+    padding-bottom: 2rem; /* Minimized space */
+    margin-bottom: 0; /* Remove margin at the bottom */
+}
+
 footer {
     background-color: #f4f4f4;
     text-align: center;
