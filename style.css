@@ -85,6 +85,16 @@ section {
     padding: 3rem 0;  /* Even out padding for consistent spacing */
 }
 
+.about-photo {
+    width: 100%; /* Make the image responsive */
+    max-width: 600px; /* Limit the max width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 2rem auto; /* Center the image with space around it */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a soft shadow for effect */
+}
+
 #projects h2, #publications h2 {
     text-align: center;
     font-size: 2rem;
