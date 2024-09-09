@@ -7,9 +7,10 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
+    line-height: 1.7;  /* Increased line-height for better readability */
     color: #333;
     margin: 0;
+    background-color: #fafafa;  /* Subtle background color for contrast */
 }
 
 nav {
@@ -18,6 +19,8 @@ nav {
     width: 100%;
     padding: 1rem 0;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Add a subtle shadow for depth */
+    z-index: 1000;
 }
 
 nav ul {
@@ -26,31 +29,31 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 1rem;
+    margin: 0 1.5rem;  /* Slightly increased margin between nav items */
 }
 
 nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    font-size: 1.1rem;  /* Increase font size for nav items */
 }
 
 section {
-    padding-top: 2rem; /* Reduce top padding */
-    padding-bottom: 2rem; /* Reduce bottom padding */
-    margin: 0 auto; /* Ensure margins are minimal */
-    min-height: 100vh;
+    padding: 4rem 0;  /* More consistent padding across sections */
+    margin: 0 auto;
+    min-height: 80vh;  /* Adjust the height for better spacing */
 }
 
 #home {
-    padding-top: 5rem; /* Adjust for spacing as needed */
-    padding-bottom: 3rem;
+    padding-top: 8rem;  /* Increased top padding for better separation from nav */
+    padding-bottom: 4rem;
     background-color: #f4f4f4;
     text-align: center;
 }
 
 .headshot {
-    width: 250px;
+    width: 200px;  /* Slightly smaller headshot */
     height: auto;
     border-radius: 50%;
     margin-bottom: 1rem;
@@ -60,89 +63,97 @@ section {
 }
 
 #home h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;  /* Slightly reduced heading size */
     color: #111;
+    margin-bottom: 1rem;  /* Add margin below the heading */
+}
+
+#home p {
+    font-size: 1.2rem;  /* Increase font size for intro text */
+    color: #555;
 }
 
 .container {
-    max-width: 800px; /* Control the maximum width */
-    margin: 0 auto; /* Center the content horizontally */
-    text-align: left; /* Left-align text inside */
+    max-width: 900px;  /* Slightly increased max width for content */
+    margin: 0 auto;
+    text-align: left;
+    padding: 0 1.5rem;  /* Add padding for responsive spacing */
 }
 
-#about {
-    padding-top: 2rem;
-    padding-bottom: 2rem; /* Minimized space */
-    margin-bottom: 0; /* Remove margin at the bottom */
+#about, #projects, #publications, #contact {
+    background-color: white;
+    padding: 3rem 0;  /* Even out padding for consistent spacing */
 }
 
-#projects {
-    padding-top: 2rem; /* Reduce space above Projects */
-    padding-bottom: 2rem;
-    margin-top: 0; /* Remove margin above Projects */
+#projects h2, #publications h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 .project {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;  /* Increase bottom margin between projects */
     padding: 2rem;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);  /* Softer shadow for more depth */
 }
 
 .project h3 {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
     color: #333;
-}
-
-.project p {
-    font-size: 1rem;
-    line-height: 1.6;
     margin-bottom: 1rem;
 }
 
+.project p {
+    font-size: 1.1rem;  /* Increase the font size for project descriptions */
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
 .project ul {
-    list-style-type: disc;
     padding-left: 1.5rem;
 }
 
 .project a {
     color: #007BFF;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .project a:hover {
     text-decoration: underline;
 }
 
-.project img {
-    width: 100%;
-}
-
-#publications {
-    background-color: #f4f4f4;
-    padding: 4rem;
-    /* Remove text-align: left */
-}
-
-#publication-list {
-    margin-top: 2rem;
+#publications h3, .publication h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
 }
 
 #publication-list .publication {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;  /* Add more space between publications */
 }
 
 #contact {
-    padding-top: 2rem;
-    padding-bottom: 2rem; /* Minimized space */
+    text-align: center;
+    background-color: #fafafa;  /* Different background color for distinction */
+}
+
+#contact h2 {
+    margin-bottom: 1rem;
+}
+
+#contact p {
+    font-size: 1.2rem;
 }
 
 footer {
     background-color: #f4f4f4;
     text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 2rem 0;  /* Increase footer padding for better spacing */
+    font-size: 0.9rem;
+    color: #777;
 }
 
 html {
