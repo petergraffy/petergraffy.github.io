@@ -173,17 +173,19 @@ section {
 .project-button {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background-color: #007BFF;
-    color: white;
+    background-color: #007BFF; /* Button background color */
+    color: #ffffff; /* Button text color */
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     margin-top: 1rem;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: none; /* Ensure no borders */
 }
 
 .project-button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker background on hover */
+    color: #ffffff; /* Text color stays white on hover */
 }
 
 #publications {
