@@ -170,6 +170,22 @@ section {
     text-decoration: underline;
 }
 
+.project-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.project-button:hover {
+    background-color: #0056b3;
+}
+
 #publications {
     background-color: #f4f4f4;
     padding: 4rem 0;
