@@ -85,14 +85,19 @@ section {
     padding: 3rem 0;  /* Even out padding for consistent spacing */
 }
 
+.image-row {
+    display: flex; /* Aligns the images side by side */
+    justify-content: center; /* Centers the images horizontally */
+    gap: 2rem; /* Adds space between the images */
+    flex-wrap: wrap; /* Ensures the images stack on smaller screens */
+}
+
 .about-photo {
-    width: 100%; /* Make the image responsive */
-    max-width: 600px; /* Limit the max width */
+    width: 100%; /* Ensures images are responsive */
+    max-width: 400px; /* Set a maximum width to keep the images from getting too large */
     height: auto; /* Maintain aspect ratio */
-    display: block;
-    margin: 2rem auto; /* Center the image with space around it */
     border-radius: 10px; /* Optional: Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a soft shadow for effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
 }
 
 #projects h2, #publications h2 {
