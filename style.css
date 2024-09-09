@@ -173,17 +173,25 @@ section {
 #publications {
     background-color: #f4f4f4;
     padding: 4rem 0;
-    text-align: center; /* Center the text and content */
+    text-align: center; /* Center the heading and the section */
 }
 
 #publication-list {
-    max-width: 900px; /* Set a max-width to avoid too much stretching */
-    margin: 0 auto; /* Center the publication list horizontally */
-    text-align: left; /* Keep text left-aligned inside the publication list */
+    max-width: 800px;  /* Limit the width of the publication list */
+    margin: 0 auto;    /* Horizontally center the content */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;         /* Add space between publications */
+    text-align: left;  /* Keep individual publication text left-aligned */
 }
 
 #publication-list .publication {
-    margin-bottom: 2rem; /* Add more space between publications */
+    margin-bottom: 1.5rem;
+}
+
+.publication h3 {
+    font-size: 1.5rem;
+    color: #333;
 }
 
 #contact {
