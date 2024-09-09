@@ -136,7 +136,6 @@ section {
 #contact {
     padding-top: 2rem;
     padding-bottom: 2rem; /* Minimized space */
-    margin-bottom: 0; /* Remove margin at the bottom */
 }
 
 footer {
