@@ -35,7 +35,9 @@ nav ul li a {
 }
 
 section {
-    padding: 4rem;
+    padding-top: 2rem; /* Reduce top padding */
+    padding-bottom: 2rem; /* Reduce bottom padding */
+    margin: 0 auto; /* Ensure margins are minimal */
     min-height: 100vh;
 }
 
