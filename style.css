@@ -9,6 +9,7 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #333;
+    margin: 0;
 }
 
 nav {
@@ -42,9 +43,10 @@ section {
 }
 
 #home {
+    padding-top: 5rem; /* Adjust for spacing as needed */
+    padding-bottom: 3rem;
     background-color: #f4f4f4;
     text-align: center;
-    padding: 10rem 0;
 }
 
 .headshot {
@@ -69,11 +71,15 @@ section {
 }
 
 #about {
-    padding-bottom: 1rem; /* Adjust this value to reduce space */
+    padding-top: 2rem;
+    padding-bottom: 2rem; /* Minimized space */
+    margin-bottom: 0; /* Remove margin at the bottom */
 }
 
 #projects {
-    padding-top: 2rem; /* Adjust this value to reduce space */
+    padding-top: 2rem; /* Reduce space above Projects */
+    padding-bottom: 2rem;
+    margin-top: 0; /* Remove margin above Projects */
 }
 
 .project {
@@ -130,7 +136,8 @@ section {
 footer {
     background-color: #f4f4f4;
     text-align: center;
-    padding: 1rem 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 html {
