@@ -173,18 +173,19 @@ section {
 .project-button {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background-color: #007BFF;
-    color: white;
-    text-decoration: none;
+    background-color: #007BFF !important; /* Ensure the button background is blue */
+    color: #ffffff !important; /* Force the text to be white */
+    text-decoration: none !important; /* Remove any underline or default styles */
     font-weight: bold;
     border-radius: 5px;
-    margin-top: 1.5rem;
-    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: none; /* Remove any borders */
 }
 
 .project-button:hover {
-    background-color: #0056b3; /* Darker background on hover */
-    color: #ffffff; /* Text color stays white on hover */
+    background-color: #0056b3 !important; /* Ensure background changes on hover */
+    color: #ffffff !important; /* Ensure text stays white on hover */
 }
 
 #publications {
