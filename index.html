@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peter Graffy</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,11 +20,11 @@
 
     <section id="home">
         <img src="img/headshot.jpg" alt="Peter Graffy Headshot" class="headshot">
-        <h1>Peter Graffy, PhD, MPH</h1>
-        <h2>Population Health Epidemiologist and Informaticist</h2>
-        <h2>Pulmonary & Critical Care Postdoctoral Fellow</h2>
-        <h2>Center for Computational Medicine and Clinical Artificial Intelligence, University of Chicago</h2>
-        <h2>Luther College | University of Wisconsin Madison | Northwestern University</h2>
+        <h1>Peter Graffy,<span class="credentials"> PhD, MPH</span></h1>
+        <p class="tagline">Population Health Epidemiologist and Informaticist</p>
+        <p class="role">Pulmonary &amp; Critical Care Postdoctoral Fellow</p>
+        <p class="affiliation">Center for Computational Medicine and Clinical Artificial Intelligence, University of Chicago</p>
+        <p class="training">Luther College | University of Wisconsin Madison | Northwestern University</p>
     </section>
 
     <section id="about">
@@ -54,24 +54,22 @@
         <div class="project">
             <h3>A tool for geospatial linkage of patient healthcare encounters with Daymet climate variables.</h3>
         <p>
-            The <strong>Daymet DeGAUSS Tool</strong> is an advanced resource I developed with fellow PhD candidate Ben Barrett to facilitate the integration of high-resolution weather and climate data with research projects. Using <a href="https://daymet.ornl.gov/" target="_blank">Daymet</a>, a data product from Oak Ridge National Laboratory, this tool allows researchers to quickly access daily surface weather parameters such as temperature, precipitation, and shortwave radiation.
+            The <strong>Daymet DeGAUSS Tool</strong> is an advanced resource I developed with fellow PhD candidate Ben Barrett to facilitate the integration of high-resolution weather and climate data with research projects. Using <a href="https://daymet.ornl.gov/" target="_blank" rel="noopener noreferrer">Daymet</a>, a data product from Oak Ridge National Laboratory, this tool allows researchers to quickly access daily surface weather parameters such as temperature, precipitation, and shortwave radiation.
         </p>
         <p>
             Designed with usability in mind, the tool provides a Docker containerized package that allows users to provide geocoded patient data using HIPAA-compliant DeGAUSS architecture and retrieve Daymet weather data from 1980 to the present at a 1km resolution. It's tailored for epidemiologists, environmental health scientists, and others who need precise weather data for modeling and analysis.
         </p>
-        <p>
-            <strong>Key Features:</strong>
-            <ul>
-                <li>Supports batch file uploads for large datasets (5+ million encounters).</li>
-                <li>Automatically retrieves historical weather data for user-defined locations.</li>
-                <li>Efficient integration with R and Python workflows.</li>
-            </ul>
-        </p>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+            <li>Supports batch file uploads for large datasets (5+ million encounters).</li>
+            <li>Automatically retrieves historical weather data for user-defined locations.</li>
+            <li>Efficient integration with R and Python workflows.</li>
+        </ul>
         <p>
             Whether you're investigating the effects of climate on public health or conducting environmental assessments, this tool provides robust and accurate data access.
         </p>
         <p>
-            Visit the <a href="https://degauss.org/daymet/" target="_blank">Daymet DeGAUSS Tool</a> to learn more and explore its capabilities.
+            Visit the <a href="https://degauss.org/daymet/" target="_blank" rel="noopener noreferrer">Daymet DeGAUSS Tool</a> to learn more and explore its capabilities.
         </p>
         </div>    
         <!-- New Project: Shiny App -->
@@ -81,10 +79,10 @@
                 If you're a map enthusiast and are interested in Chicago crime (for the near North neighborhoods), look no further. This interactive Shiny app visualizes crime data in Chicago for three northern wards. It allows users to explore crime locations by type, date, and neighborhood using an interactive map. This was originally made for my HOA as a few folks in my building were worried about crime in the area.
             </p>
             <p>The interactive map allows you to see the crime classification, date of the crime, and its description. Data are pulled from the Chicago Data Portal.</p>
-            <a href="https://petergraffy.shinyapps.io/ChicagoCrimeMap/" target="_blank" class="project-button">Explore the Crime Map</a>
+            <a href="https://petergraffy.shinyapps.io/ChicagoCrimeMap/" target="_blank" rel="noopener noreferrer" class="project-button">Explore the Crime Map</a>
             <br><br>
             <p>And if you want some further insights into the trends for the area, see another shinyapp I made that looks at trends in certain crime types.</p>
-            <p> See the <a href="https://petergraffy.shinyapps.io/Ward_43_Crime_for_OCA/" target="_blank">crime trends here</a>.</p>
+            <p> See the <a href="https://petergraffy.shinyapps.io/Ward_43_Crime_for_OCA/" target="_blank" rel="noopener noreferrer">crime trends here</a>.</p>
         </div>
         </div>
     </section>
@@ -95,7 +93,19 @@
         <p>Here is a sample of some of my latest publications:</p>
         <div class="container">
             <div id="publication-list">
-        <p>Loading publications...</p>
+                <div class="publication">
+                    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41875960/" target="_blank" rel="noopener noreferrer">Heat and hearts: An exposure-anchored computational phenotyping framework for assessing cardiovascular vulnerability during extreme heat.</a></h3>
+                    <p>J Biomed Inform</p>
+                </div>
+                <div class="publication">
+                    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41532540/" target="_blank" rel="noopener noreferrer">Critical Temperature Thresholds for Identifying Vulnerability to Heat-Related Excess Cardiovascular Morbidity and Mortality.</a></h3>
+                    <p>J Am Heart Assoc</p>
+                </div>
+                <div class="publication">
+                    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/39329101/" target="_blank" rel="noopener noreferrer">Methodological Approaches for Measuring the Association Between Heat Exposure and Health Outcomes: A Comprehensive Global Scoping Review.</a></h3>
+                    <p>Geohealth</p>
+                </div>
+                <p class="publication-note">This list updates from PubMed when available.</p>
             </div>
         </div>
     </section>
@@ -125,22 +135,34 @@ const fetchPublications = async () => {
         const esummaryResponse = await fetch(esummaryUrl);
         const esummaryData = await esummaryResponse.json();
 
-        // Step 3: Append publication titles and links
         const publicationsDiv = document.getElementById('publication-list');
-        publicationsDiv.innerHTML = ''; // Clear the previous list but keep the descriptive text
+        publicationsDiv.innerHTML = '';
 
         pubmedIDs.forEach(id => {
             const pub = esummaryData.result[id];
             const pubDiv = document.createElement('div');
             pubDiv.classList.add('publication');
-            pubDiv.innerHTML = `
-                <h3><a href="https://pubmed.ncbi.nlm.nih.gov/${id}/" target="_blank">${pub.title}</a></h3>
-                <p>${pub.source}</p>
-            `;
-            publicationsDiv.appendChild(pubDiv); // Append each publication to the list
+            const title = document.createElement('h3');
+            const link = document.createElement('a');
+            const source = document.createElement('p');
+
+            link.href = `https://pubmed.ncbi.nlm.nih.gov/${id}/`;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            link.textContent = pub.title;
+            source.textContent = pub.source;
+
+            title.appendChild(link);
+            pubDiv.appendChild(title);
+            pubDiv.appendChild(source);
+            publicationsDiv.appendChild(pubDiv);
         });
     } catch (error) {
         console.error('Error fetching publications:', error);
+        const note = document.querySelector('.publication-note');
+        if (note) {
+            note.textContent = 'Showing a static publication sample because the live PubMed feed is unavailable.';
+        }
     }
 };
 
