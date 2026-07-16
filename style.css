@@ -80,14 +80,16 @@ main {
 .hero {
     align-items: center;
     background:
-        linear-gradient(120deg, rgba(33, 66, 54, 0.9), rgba(98, 124, 101, 0.72)),
-        url("img/headshot.jpg") center 34% / cover;
+        linear-gradient(135deg, rgba(20, 40, 31, 0.98), rgba(33, 66, 54, 0.94) 58%, rgba(98, 124, 101, 0.9)),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: auto, 72px 72px, 72px 72px;
     color: var(--white);
     display: grid;
-    gap: 3rem;
+    gap: clamp(2rem, 5vw, 4.5rem);
     grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
-    min-height: 92vh;
-    padding: 8rem clamp(1.25rem, 6vw, 5.5rem) 4.5rem;
+    min-height: 760px;
+    padding: 7.25rem clamp(1.25rem, 6vw, 5.5rem) 4.5rem;
 }
 
 .hero-copy {
@@ -116,8 +118,9 @@ h3 {
 }
 
 h1 {
-    font-size: clamp(3.1rem, 9vw, 7.8rem);
+    font-size: clamp(3rem, 7.4vw, 6.6rem);
     margin-bottom: 1.2rem;
+    max-width: 780px;
 }
 
 h2 {
@@ -174,7 +177,7 @@ h3 {
     display: grid;
     gap: 1.25rem;
     justify-self: end;
-    max-width: 360px;
+    max-width: 340px;
     padding: 1.2rem;
 }
 
@@ -406,7 +409,7 @@ footer {
 
     .hero {
         min-height: auto;
-        padding-top: 9.5rem;
+        padding-top: 9rem;
     }
 
     .hero-panel {
