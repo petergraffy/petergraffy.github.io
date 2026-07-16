@@ -3,149 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peter Graffy</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Peter Graffy, PhD, MPH is a population health epidemiologist and informaticist studying climate, cardiovascular health, electronic health records, and clinical AI.">
+    <title>Peter Graffy, PhD, MPH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <header class="site-header">
+        <a class="brand" href="#home">Peter Graffy</a>
+        <nav aria-label="Primary navigation">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#publications">Publications</a>
+            <a href="#media">Media</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <section id="home">
-        <img src="img/headshot.jpg" alt="Peter Graffy Headshot" class="headshot">
-        <h1>Peter Graffy, PhD, MPH</h1>
-        <h2>Population Health Epidemiologist and Informaticist</h2>
-        <h2>Pulmonary & Critical Care Postdoctoral Fellow</h2>
-        <h2>Center for Computational Medicine and Clinical Artificial Intelligence, University of Chicago</h2>
-        <h2>Luther College | University of Wisconsin Madison | Northwestern University</h2>
-    </section>
-
-    <section id="about">
-        <div class="container">
-        <h2>About Me</h2>
-        <p>I am a pulmonary and critical care postdoctoral fellow in the Biological Sciences Division at the University of Chicago and a prior American Heart Association predoctoral fellow in the Department of Preventive Medicine at Northwestern University.
-        My research focuses on electronic health record linkage for population health surveillance and dynamic risk prediction using novel ML analytical methods. I have developed computer-aided
-        detection and geolinkage tools that harness protected health information in a HIPAA-compliant manner to improve individual and community health outcomes.
-        My dissertation work evaluated the impact of climate change-related extreme heat events on Chicago through community level assessment and individual level computational phenotypes that integrate EHR and ecological data. </p>
-        <br>
-        <a href="img/peter_graffy_cv.pdf" download="Peter_Graffy_CV" class="cv-button">Download My CV</a>
-        <br><br>
-        <p>Outside of work, I spend most of my time being active, coaching or playing sports, and with family and friends. I played collegiate soccer and was an internationally-recognized ultimate frisbee player with multiple national championships.
-        I now compete in fitness races such as CrossFit and Hyrox with my sights set on doing a sub-9H Leadville 100 MTB race. </p>
-        <br>
-            <div class="image-row">
-            <img src="img/uf.JPG" alt="Peter Graffy Playing Ultimate Frisbee" class="about-photo">
-            <img src="img/hyrox.jpg" alt="Peter Graffy at Hyrox Event" class="about-photo">
-            </div> 
-        </div>
-    </section>
-
-    <!-- Projects Section (for your current work) -->
-    <section id="projects">
-        <div class="container">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>A tool for geospatial linkage of patient healthcare encounters with Daymet climate variables.</h3>
-        <p>
-            The <strong>Daymet DeGAUSS Tool</strong> is an advanced resource I developed with fellow PhD candidate Ben Barrett to facilitate the integration of high-resolution weather and climate data with research projects. Using <a href="https://daymet.ornl.gov/" target="_blank">Daymet</a>, a data product from Oak Ridge National Laboratory, this tool allows researchers to quickly access daily surface weather parameters such as temperature, precipitation, and shortwave radiation.
-        </p>
-        <p>
-            Designed with usability in mind, the tool provides a Docker containerized package that allows users to provide geocoded patient data using HIPAA-compliant DeGAUSS architecture and retrieve Daymet weather data from 1980 to the present at a 1km resolution. It's tailored for epidemiologists, environmental health scientists, and others who need precise weather data for modeling and analysis.
-        </p>
-        <p>
-            <strong>Key Features:</strong>
-            <ul>
-                <li>Supports batch file uploads for large datasets (5+ million encounters).</li>
-                <li>Automatically retrieves historical weather data for user-defined locations.</li>
-                <li>Efficient integration with R and Python workflows.</li>
-            </ul>
-        </p>
-        <p>
-            Whether you're investigating the effects of climate on public health or conducting environmental assessments, this tool provides robust and accurate data access.
-        </p>
-        <p>
-            Visit the <a href="https://degauss.org/daymet/" target="_blank">Daymet DeGAUSS Tool</a> to learn more and explore its capabilities.
-        </p>
-        </div>    
-        <!-- New Project: Shiny App -->
-        <div class="project">
-            <h3>Chicago Crime Map Shiny App</h3>
-            <p>
-                If you're a map enthusiast and are interested in Chicago crime (for the near North neighborhoods), look no further. This interactive Shiny app visualizes crime data in Chicago for three northern wards. It allows users to explore crime locations by type, date, and neighborhood using an interactive map. This was originally made for my HOA as a few folks in my building were worried about crime in the area.
-            </p>
-            <p>The interactive map allows you to see the crime classification, date of the crime, and its description. Data are pulled from the Chicago Data Portal.</p>
-            <a href="https://petergraffy.shinyapps.io/ChicagoCrimeMap/" target="_blank" class="project-button">Explore the Crime Map</a>
-            <br><br>
-            <p>And if you want some further insights into the trends for the area, see another shinyapp I made that looks at trends in certain crime types.</p>
-            <p> See the <a href="https://petergraffy.shinyapps.io/Ward_43_Crime_for_OCA/" target="_blank">crime trends here</a>.</p>
-        </div>
-        </div>
-    </section>
-
-    <!-- Publications Section (for NIH publications) -->
-    <section id="publications">
-        <h2>Publications</h2>
-        <p>Here is a sample of some of my latest publications:</p>
-        <div class="container">
-            <div id="publication-list">
-        <p>Loading publications...</p>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Population Health Epidemiology | Informatics | Climate & Health</p>
+                <h1>Peter Graffy, PhD, MPH</h1>
+                <p class="lead">I build epidemiologic and informatics tools that link clinical, environmental, and geospatial data to measure health risks and support better decisions for patients and communities.</p>
+                <div class="hero-actions" aria-label="Primary links">
+                    <a class="button primary" href="img/peter_graffy_cv.pdf" download="Peter_Graffy_CV.pdf">Download CV</a>
+                    <a class="button secondary" href="#projects">View projects</a>
+                </div>
             </div>
-        </div>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:petergraffy@gmail.com">petergraffy@gmail.com</a></p>
-    </section>
+            <div class="hero-panel" aria-label="Profile summary">
+                <img src="img/headshot.jpg" alt="Peter Graffy" class="headshot">
+                <div>
+                    <p class="role">Pulmonary & Critical Care Postdoctoral Fellow</p>
+                    <p>Center for Computational Medicine and Clinical Artificial Intelligence, University of Chicago</p>
+                </div>
+                <ul class="quick-facts" aria-label="Background">
+                    <li>Luther College</li>
+                    <li>University of Wisconsin-Madison</li>
+                    <li>Northwestern University</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">About</p>
+                <h2>Computational public health, grounded in real-world clinical data.</h2>
+            </div>
+            <div class="two-column">
+                <div class="prose">
+                    <p>I am a pulmonary and critical care postdoctoral fellow in the Biological Sciences Division at the University of Chicago and a prior American Heart Association predoctoral fellow in Preventive Medicine at Northwestern University.</p>
+                    <p>My work focuses on electronic health record linkage for population health surveillance, dynamic risk prediction, and machine learning methods that make clinical and environmental data more useful. I have built computer-aided detection and geolinkage tools that use protected health information in HIPAA-compliant workflows to improve individual and community health outcomes.</p>
+                    <p>My dissertation evaluated the impact of climate change-related extreme heat in Chicago through community-level assessment and individual-level computational phenotypes integrating EHR and ecological data.</p>
+                </div>
+                <div class="feature-list" aria-label="Research focus areas">
+                    <div>
+                        <span>01</span>
+                        <h3>Climate & health</h3>
+                        <p>Extreme heat exposure, cardiovascular vulnerability, and public health surveillance.</p>
+                    </div>
+                    <div>
+                        <span>02</span>
+                        <h3>Clinical AI</h3>
+                        <p>Phenotyping, risk prediction, and automated tools for clinically meaningful measurement.</p>
+                    </div>
+                    <div>
+                        <span>03</span>
+                        <h3>Geospatial linkage</h3>
+                        <p>Privacy-preserving workflows connecting health encounters with place-based context.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section tinted">
+            <div class="section-heading">
+                <p class="eyebrow">Projects</p>
+                <h2>Tools and analyses for clinical, climate, and community data.</h2>
+            </div>
+            <div class="card-grid">
+                <article class="card">
+                    <p class="tag">Climate Data Tool</p>
+                    <h3>Daymet DeGAUSS Tool</h3>
+                    <p>A Docker-based geospatial linkage tool for connecting geocoded patient encounters with Daymet surface weather and climate variables at 1 km resolution.</p>
+                    <ul>
+                        <li>Designed for large encounter datasets</li>
+                        <li>Works with HIPAA-compliant DeGAUSS architecture</li>
+                        <li>Supports R and Python research workflows</li>
+                    </ul>
+                    <a href="https://degauss.org/daymet/" target="_blank" rel="noopener">Explore the tool</a>
+                </article>
+                <article class="card">
+                    <p class="tag">Computational Phenotyping</p>
+                    <h3>Heat and Hearts</h3>
+                    <p>An exposure-anchored framework for identifying cardiovascular vulnerability during extreme heat using linked environmental exposures and EHR-derived outcomes.</p>
+                    <ul>
+                        <li>Published in Journal of Biomedical Informatics</li>
+                        <li>Centers exposure timing in phenotype construction</li>
+                        <li>Designed for climate-health surveillance</li>
+                    </ul>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/41875960/" target="_blank" rel="noopener">Read on PubMed</a>
+                </article>
+                <article class="card">
+                    <p class="tag">Civic Data</p>
+                    <h3>Chicago Crime Map</h3>
+                    <p>An interactive Shiny app mapping Chicago crime reports for northern wards, built for neighborhood-level exploration by type, date, and location.</p>
+                    <ul>
+                        <li>Uses Chicago Data Portal records</li>
+                        <li>Supports interactive map review</li>
+                        <li>Includes companion trend summaries</li>
+                    </ul>
+                    <div class="link-row">
+                        <a href="https://petergraffy.shinyapps.io/ChicagoCrimeMap/" target="_blank" rel="noopener">Open map</a>
+                        <a href="https://petergraffy.shinyapps.io/Ward_43_Crime_for_OCA/" target="_blank" rel="noopener">View trends</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="publications" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Publications</p>
+                <h2>Selected recent publications.</h2>
+            </div>
+            <div class="publication-grid" id="publication-list">
+                <article class="publication">
+                    <p>2026 | Journal of Biomedical Informatics</p>
+                    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41875960/" target="_blank" rel="noopener">Heat and hearts: An exposure-anchored computational phenotyping framework for assessing cardiovascular vulnerability during extreme heat.</a></h3>
+                </article>
+                <article class="publication">
+                    <p>2026 | Journal of the American Heart Association</p>
+                    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41532540/" target="_blank" rel="noopener">Critical Temperature Thresholds for Identifying Vulnerability to Heat-Related Excess Cardiovascular Morbidity and Mortality.</a></h3>
+                </article>
+                <article class="publication">
+                    <p>2024 | GeoHealth</p>
+                    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/39329101/" target="_blank" rel="noopener">Methodological Approaches for Measuring the Association Between Heat Exposure and Health Outcomes: A Comprehensive Global Scoping Review.</a></h3>
+                </article>
+                <article class="publication">
+                    <p>2024 | JAMIA</p>
+                    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/38070172/" target="_blank" rel="noopener">Longitudinal clustering of Life's Essential 8 health metrics in the CARDIA study.</a></h3>
+                </article>
+            </div>
+            <div class="section-actions">
+                <a class="button secondary" href="https://pubmed.ncbi.nlm.nih.gov/?term=Graffy%2C+Peter%5BAuthor%5D" target="_blank" rel="noopener">See all PubMed publications</a>
+            </div>
+        </section>
+
+        <section id="media" class="section tinted">
+            <div class="section-heading">
+                <p class="eyebrow">Media & Public Attention</p>
+                <h2>Public-facing work at the intersection of health, climate, and data.</h2>
+            </div>
+            <div class="media-grid">
+                <article class="media-card">
+                    <h3>Extreme heat and cardiovascular risk</h3>
+                    <p>Recent work on heat-related cardiovascular vulnerability translates climate exposure data and EHR-derived outcomes into evidence for clinicians, researchers, and public health teams.</p>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/41532540/" target="_blank" rel="noopener">View publication</a>
+                </article>
+                <article class="media-card">
+                    <h3>Chicago heat-health surveillance</h3>
+                    <p>A heat-wide analysis of acute-care diagnoses in Chicago examines how extreme heat affects emergency and urgent care visits across the diagnostic spectrum.</p>
+                    <a href="https://arxiv.org/abs/2601.16932" target="_blank" rel="noopener">Read preprint</a>
+                </article>
+                <article class="media-card">
+                    <h3>Open tools for exposure science</h3>
+                    <p>The Daymet DeGAUSS workflow helps researchers add high-resolution historical weather exposure data to health studies without rebuilding geospatial infrastructure from scratch.</p>
+                    <a href="https://degauss.org/daymet/" target="_blank" rel="noopener">Visit Daymet DeGAUSS</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section personal">
+            <div class="personal-copy">
+                <p class="eyebrow">Beyond Work</p>
+                <h2>Still chasing hard efforts.</h2>
+                <p>Outside of research, I spend most of my time being active, coaching or playing sports, and with family and friends. I played collegiate soccer and was an internationally recognized ultimate frisbee player with multiple national championships. I now compete in fitness races such as CrossFit and Hyrox, with my sights set on a sub-9H Leadville 100 MTB race.</p>
+            </div>
+            <div class="image-row">
+                <img src="img/uf.JPG" alt="Peter Graffy playing ultimate frisbee" class="about-photo">
+                <img src="img/hyrox.jpg" alt="Peter Graffy at a Hyrox event" class="about-photo">
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <p class="eyebrow">Contact</p>
+            <h2>Interested in climate-health data, clinical AI, or collaboration?</h2>
+            <a class="button primary" href="mailto:petergraffy@gmail.com">petergraffy@gmail.com</a>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; Peter Graffy 2026</p>
     </footer>
-
-    <!-- JavaScript to Fetch and Display NIH Publications -->
-    <script>
-const fetchPublications = async () => {
-    try {
-        // Step 1: Fetch publication IDs (PubMed IDs) using E-utilities API
-        const esearchUrl = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Peter+Graffy[Author]&retmode=json';
-        const esearchResponse = await fetch(esearchUrl);
-        const esearchData = await esearchResponse.json();
-        const pubmedIDs = esearchData.esearchresult.idlist;
-
-        // Step 2: Fetch publication details for the retrieved PubMed IDs
-        const ids = pubmedIDs.join(',');
-        const esummaryUrl = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=${ids}&retmode=json`;
-        const esummaryResponse = await fetch(esummaryUrl);
-        const esummaryData = await esummaryResponse.json();
-
-        // Step 3: Append publication titles and links
-        const publicationsDiv = document.getElementById('publication-list');
-        publicationsDiv.innerHTML = ''; // Clear the previous list but keep the descriptive text
-
-        pubmedIDs.forEach(id => {
-            const pub = esummaryData.result[id];
-            const pubDiv = document.createElement('div');
-            pubDiv.classList.add('publication');
-            pubDiv.innerHTML = `
-                <h3><a href="https://pubmed.ncbi.nlm.nih.gov/${id}/" target="_blank">${pub.title}</a></h3>
-                <p>${pub.source}</p>
-            `;
-            publicationsDiv.appendChild(pubDiv); // Append each publication to the list
-        });
-    } catch (error) {
-        console.error('Error fetching publications:', error);
-    }
-};
-
-// Call the function to fetch and display publications
-fetchPublications();
-    </script>
 </body>
 </html>
