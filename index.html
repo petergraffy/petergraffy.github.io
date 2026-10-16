@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Peter Graffy, PhD, MPH is a population health epidemiologist, informaticist, and Straia Health co-founder studying climate, cardiovascular health, electronic health records, and clinical AI.">
     <title>Peter Graffy, PhD, MPH</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=20260827-impact">
+    <link rel="stylesheet" href="style.css?v=20261016">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
         <a class="brand" href="#home">Peter Graffy</a>
         <nav aria-label="Primary navigation">
@@ -22,36 +20,52 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main">
         <section id="home" class="hero">
             <div class="hero-copy">
-                <p class="eyebrow">Population Health Epidemiology | Informatics | Climate & Health</p>
-                <h1>Peter Graffy, PhD, MPH</h1>
-                <p class="lead">I build epidemiologic and informatics tools that link clinical, environmental, and geospatial data to measure health risks and support better decisions for patients, communities, and climate-vulnerable workforces.</p>
+                <p class="eyebrow">Epidemiology · Informatics · Climate &amp; health</p>
+                <h1>Peter Graffy</h1>
+                <p class="credentials">PhD, MPH</p>
+                <p class="lead">I study how our environment shapes health, using clinical records, geospatial data, and epidemiologic methods. My work focuses on extreme heat, cardiovascular risk, and making health data useful beyond the hospital.</p>
                 <div class="hero-actions" aria-label="Primary links">
                     <a class="button primary" href="img/peter_graffy_cv.pdf" download="Peter_Graffy_CV.pdf">Download CV</a>
-                    <a class="button secondary" href="#projects">View projects</a>
+                    <a href="#featured-podcast">Listen to my Climate Proof interview &rarr;</a>
                 </div>
             </div>
             <div class="hero-panel" aria-label="Profile summary">
-                <img src="img/headshot.jpg" alt="Peter Graffy" class="headshot">
+                <img src="img/headshot.jpg" alt="Peter Graffy" class="headshot" width="600" height="600">
                 <div>
                     <p class="role">Pulmonary & Critical Care Postdoctoral Fellow</p>
                     <p>Center for Computational Medicine and Clinical Artificial Intelligence, University of Chicago</p>
                 </div>
-                <ul class="quick-facts" aria-label="Background">
-                    <li>Co-founder, Straia Health</li>
-                    <li>Luther College</li>
-                    <li>University of Wisconsin-Madison</li>
-                    <li>Northwestern University</li>
-                </ul>
+                <p class="profile-note">Co-founder, <a href="https://straiahealth.com/" target="_blank" rel="noopener">Straia Health</a></p>
+            </div>
+        </section>
+
+        <section id="featured-podcast" class="podcast-feature" aria-labelledby="podcast-title">
+            <div class="podcast-label">
+                <p class="eyebrow">Latest conversation</p>
+                <p>Climate Proofers<br><time datetime="2026-10-13">October 13, 2026</time> · 45 minutes</p>
+            </div>
+            <div class="podcast-copy">
+                <h2 id="podcast-title">Democratizing climate-health intelligence</h2>
+                <p>I joined Louie Woodall to talk about Chicago’s heat vulnerability research, Straia Health, and how health data can help communities prepare for a changing climate.</p>
+                <audio controls preload="none" aria-label="Listen to Peter Graffy on Climate Proofers" aria-describedby="podcast-title">
+                    <source src="https://podcasts.beehiiv.com/26b2846f-7b90-4626-b52e-85b1e960f841/019d6610-8bfe-7957-bb0f-df9c043db18b/01a13740-ebf2-7e02-84c6-623b36581461/01a13740-ed85-732b-b6e9-0529791407f3.mp3" type="audio/mpeg">
+                    Your browser does not support embedded audio. Use the episode link below to listen.
+                </audio>
+                <div class="link-row">
+                    <a href="https://www.climateproof.news/podcast/s/climate_proofers/peter_graffy_on_democratizing_climate-health_intelligence" target="_blank" rel="noopener">Episode &amp; transcript</a>
+                    <a href="https://open.spotify.com/episode/6zreh8P0zTDLafCUrWYyBR" target="_blank" rel="noopener">Spotify</a>
+                    <a href="https://podcasts.apple.com/us/podcast/peter-graffy-on-democratizing-climate-health-intelligence/id1895508359?i=1000796212054" target="_blank" rel="noopener">Apple Podcasts</a>
+                </div>
             </div>
         </section>
 
         <section id="about" class="section">
             <div class="section-heading">
                 <p class="eyebrow">About</p>
-                <h2>Computational public health, grounded in real-world clinical data.</h2>
+                <h2>About my work</h2>
             </div>
             <div class="two-column">
                 <div class="prose">
@@ -59,46 +73,29 @@
                     <p>My work focuses on electronic health record linkage for population health surveillance, dynamic risk prediction, and machine learning methods that make clinical and environmental data more useful. I have built computer-aided detection and geolinkage tools that use protected health information in HIPAA-compliant workflows to improve individual and community health outcomes.</p>
                     <p>Through Straia, I am helping develop climate-health intelligence products, including <a href="https://straiahealth.com/heatscope" target="_blank" rel="noopener">HeatScope</a>, to quantify environmentally driven health risk and help organizations act earlier. My dissertation evaluated the impact of climate change-related extreme heat in Chicago through community-level assessment and individual-level computational phenotypes integrating EHR and ecological data.</p>
                 </div>
-                <div class="feature-list" aria-label="Research focus areas">
-                    <div>
-                        <span>01</span>
-                        <h3>Climate & health</h3>
-                        <p>Extreme heat exposure, cardiovascular vulnerability, and public health surveillance.</p>
-                    </div>
-                    <div>
-                        <span>02</span>
-                        <h3>Clinical AI</h3>
-                        <p>Phenotyping, risk prediction, and automated tools for clinically meaningful measurement.</p>
-                    </div>
-                    <div>
-                        <span>03</span>
-                        <h3>Geospatial linkage</h3>
-                        <p>Privacy-preserving workflows connecting health encounters with place-based context.</p>
-                    </div>
-                    <div>
-                        <span>04</span>
-                        <h3>Climate-health products</h3>
-                        <p>Applied tools that translate environmental hazard forecasts into timely health-risk action.</p>
-                    </div>
-                </div>
+                <aside class="research-note">
+                    <h3>Research interests</h3>
+                    <ul>
+                        <li>Extreme heat and cardiovascular health</li>
+                        <li>Clinical phenotyping and risk prediction</li>
+                        <li>Linking health records with environmental data</li>
+                        <li>Climate adaptation in healthcare</li>
+                    </ul>
+                    <p>Training at Luther College, the University of Wisconsin–Madison, and Northwestern University.</p>
+                </aside>
             </div>
         </section>
 
         <section id="projects" class="section tinted">
             <div class="section-heading">
                 <p class="eyebrow">Projects</p>
-                <h2>Tools and analyses for clinical, climate, and community data.</h2>
+                <h2>Research &amp; projects</h2>
             </div>
             <div class="card-grid">
                 <article class="card">
                     <p class="tag">Company & Product</p>
                     <h3>Straia Health & HeatScope</h3>
                     <p>As co-founder of Straia Health, I help develop intelligence tools for environmentally driven health risk. HeatScope combines climate data, observed health outcomes, structural risk factors, and modeling to help teams understand where extreme heat may drive excess deaths, emergency visits, and EMS calls.</p>
-                    <ul>
-                        <li>Advanced heat-health intelligence</li>
-                        <li>Community-level aggregated data with no PHI</li>
-                        <li>Decision support for earlier interventions</li>
-                    </ul>
                     <div class="link-row">
                         <a href="https://straiahealth.com/" target="_blank" rel="noopener">Visit Straia</a>
                         <a href="https://straiahealth.com/heatscope" target="_blank" rel="noopener">View HeatScope</a>
@@ -108,33 +105,18 @@
                     <p class="tag">Climate Data Tool</p>
                     <h3>Daymet DeGAUSS Tool</h3>
                     <p>A Docker-based geospatial linkage tool for connecting geocoded patient encounters with Daymet surface weather and climate variables at 1 km resolution.</p>
-                    <ul>
-                        <li>Designed for large encounter datasets</li>
-                        <li>Works with HIPAA-compliant DeGAUSS architecture</li>
-                        <li>Supports R and Python research workflows</li>
-                    </ul>
                     <a href="https://degauss.org/daymet/" target="_blank" rel="noopener">Explore the tool</a>
                 </article>
                 <article class="card">
                     <p class="tag">Critical Care & Environment</p>
                     <h3>REFER Study</h3>
                     <p>A multicenter critical-care research program linking ambient air pollution exposure, respiratory failure phenotypes, and ICU outcomes to quantify environmental risk in severe illness.</p>
-                    <ul>
-                        <li>National acute respiratory failure cohort</li>
-                        <li>Environment-informed phenotyping</li>
-                        <li>Manuscript under review at The Lancet Planetary Health</li>
-                    </ul>
                     <a href="https://doi.org/10.2139/ssrn.6153166" target="_blank" rel="noopener">View preprint</a>
                 </article>
                 <article class="card">
                     <p class="tag">Civic Data</p>
                     <h3>Chicago Crime Map</h3>
                     <p>An interactive Shiny app mapping Chicago crime reports for northern wards, built for neighborhood-level exploration by type, date, and location.</p>
-                    <ul>
-                        <li>Uses Chicago Data Portal records</li>
-                        <li>Supports interactive map review</li>
-                        <li>Includes companion trend summaries</li>
-                    </ul>
                     <div class="link-row">
                         <a href="https://petergraffy.shinyapps.io/ChicagoCrimeMap/" target="_blank" rel="noopener">Open map</a>
                         <a href="https://petergraffy.shinyapps.io/Ward_43_Crime_for_OCA/" target="_blank" rel="noopener">View trends</a>
@@ -146,7 +128,7 @@
         <section id="publications" class="section">
             <div class="section-heading">
                 <p class="eyebrow">Publications</p>
-                <h2>Selected high-impact publications and preprints.</h2>
+                <h2>Selected publications</h2>
             </div>
             <div class="publication-grid" id="publication-list">
                 <article class="publication">
@@ -182,9 +164,16 @@
         <section id="media" class="section tinted">
             <div class="section-heading">
                 <p class="eyebrow">Media & Mentions</p>
-                <h2>Coverage and public references to my work.</h2>
+                <h2>In the media</h2>
             </div>
+            <p class="media-intro">For my recent Climate Proofers interview, <a href="#featured-podcast">listen to the episode above</a>.</p>
             <div class="media-grid">
+                <article class="media-card">
+                    <p class="source">Chicago Sun-Times &amp; WBEZ | <time datetime="2026-10-03">October 3, 2026</time></p>
+                    <h3>Heat deaths in Cook County and the case for prevention</h3>
+                    <p>Reporting on the summer’s heat deaths, including my comments on our study of heat-related emergency visits and how hospital records can inform prevention.</p>
+                    <a href="https://chicago.suntimes.com/health/2026/10/03/all-heat-related-deaths-are-preventable-but-in-the-chicago-area-16-died-from-heat-this-summer" target="_blank" rel="noopener">Read coverage</a>
+                </article>
                 <article class="media-card">
                     <p class="source">Associated Press | 2026</p>
                     <h3>Heat makes emergency rooms busier</h3>
@@ -252,19 +241,20 @@
         <section class="section personal">
             <div class="personal-copy">
                 <p class="eyebrow">Beyond Work</p>
-                <h2>Still chasing hard efforts.</h2>
+                <h2>Outside of research</h2>
                 <p>Outside of research, I spend most of my time being active, coaching or playing sports, and with family and friends. I played collegiate soccer and was an internationally recognized ultimate frisbee player with multiple national championships. I now compete in fitness races such as CrossFit and Hyrox, with my sights set on a sub-9H Leadville 100 MTB race.</p>
             </div>
             <div class="image-row">
-                <img src="img/uf.JPG" alt="Peter Graffy playing ultimate frisbee" class="about-photo">
-                <img src="img/hyrox.jpg" alt="Peter Graffy at a Hyrox event" class="about-photo">
+                <img src="img/uf.JPG" alt="Peter Graffy playing ultimate frisbee" class="about-photo" loading="lazy">
+                <img src="img/hyrox.jpg" alt="Peter Graffy at a Hyrox event" class="about-photo" loading="lazy">
             </div>
         </section>
 
         <section id="contact" class="contact">
             <p class="eyebrow">Contact</p>
-            <h2>Interested in climate-health data, clinical AI, or collaboration?</h2>
-            <a class="button primary" href="mailto:petergraffy@gmail.com">petergraffy@gmail.com</a>
+            <h2>Get in touch</h2>
+            <p class="contact-note">For research collaborations, climate-health projects, or a conversation about the work:</p>
+            <a class="contact-email" href="mailto:petergraffy@gmail.com">petergraffy@gmail.com</a>
         </section>
     </main>
 
